@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Phil ist unterwegs</title>
+  <meta name="description" content="Persönlicher Reiseblog von Phil." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#top">Phil ist unterwegs</a>
+    <button class="menu-btn" aria-label="Menü öffnen" aria-expanded="false">☰</button>
+    <nav class="nav">
+      <a href="#stories">Blog</a>
+      <a href="#gallery">Fotos</a>
+      <a href="#about">Über mich</a>
+    </nav>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <img src="assets/beach.jpg" alt="Strand und Meer" />
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <span class="eyebrow">REISEBLOG</span>
+        <h1>Phil ist<br>unterwegs.</h1>
+        <p>Texte kommen später. Erstmal zählt das Gefühl.</p>
+        <a class="cta" href="#gallery">Fotos ansehen ↓</a>
+      </div>
+    </section>
+
+    <section class="intro" id="stories">
+      <div>
+        <span class="eyebrow dark">NEU IM BLOG</span>
+        <h2>Geschichten, die noch geschrieben werden.</h2>
+      </div>
+      <p class="muted">Hier kommen später deine Reiseberichte, Orte, Erlebnisse und persönlichen Texte hinein.</p>
+    </section>
+
+    <section class="cards">
+      <article class="story-card large">
+        <img src="assets/night.jpg" alt="Abendliche Straße" />
+        <div class="card-copy"><span>01</span><h3>Beitrag folgt</h3><p>Text später</p></div>
+      </article>
+      <article class="story-card">
+        <img src="assets/travel.jpg" alt="Unterwegs" />
+        <div class="card-copy"><span>02</span><h3>Beitrag folgt</h3><p>Text später</p></div>
+      </article>
+      <article class="story-card">
+        <img src="assets/food.jpg" alt="Essen unterwegs" />
+        <div class="card-copy"><span>03</span><h3>Beitrag folgt</h3><p>Text später</p></div>
+      </article>
+    </section>
+
+    <section class="gallery-section" id="gallery">
+      <div class="section-head">
+        <div><span class="eyebrow dark">MOMENTE</span><h2>Fotoalbum</h2></div>
+        <p class="muted">Eine erste Auswahl aus deinem Material.</p>
+      </div>
+      <div class="masonry">
+        <button class="photo tall"><img src="assets/beach.jpg" alt="Meer"></button>
+        <button class="photo"><img src="assets/snack.jpg" alt="Snack"></button>
+        <button class="photo"><img src="assets/drink.jpg" alt="Getränk unterwegs"></button>
+        <button class="photo tall"><img src="assets/night.jpg" alt="Abend"></button>
+        <button class="photo"><img src="assets/pasta.jpg" alt="Pasta"></button>
+        <button class="photo tall"><img src="assets/portrait.jpg" alt="Unterwegs"></button>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <img src="assets/portrait.jpg" alt="Phil unterwegs" />
+      <div>
+        <span class="eyebrow dark">ÜBER DEN BLOG</span>
+        <h2>Ein Platz für deine Reisen.</h2>
+        <p class="muted">Dein eigener Bereich für Bilder, Videos und Geschichten. Den Text bauen wir später gemeinsam ein.</p>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <strong>Phil ist unterwegs</strong>
+    <span>© 2026</span>
+  </footer>
+
+  <dialog id="lightbox"><button class="close" aria-label="Schließen">×</button><img alt="Großansicht"></dialog>
+  <script src="script.js"></script>
+</body>
+</html>
