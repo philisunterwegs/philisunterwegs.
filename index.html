@@ -4,7 +4,7 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Phil ist unterwegs</title>
-  <meta name="description" content="Persönlicher Reiseblog von Phil." />
+  <meta name="description" content="Phil ist unterwegs – persönliche Reisegeschichten, Fotos, Videos und kleine Momente von unterwegs." />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
@@ -12,62 +12,112 @@
 </head>
 <body>
   <header class="site-header">
-    <a class="brand" href="#top">Phil ist unterwegs</a>
+    <a class="brand" href="index.html">Phil ist unterwegs</a>
     <button class="menu-btn" aria-label="Menü öffnen" aria-expanded="false">☰</button>
     <nav class="nav">
-      <a href="#stories">Blog</a>
-      <a href="#gallery">Fotos</a>
+      <a href="#blog">Blog</a>
+      <a href="#videos">Videos</a>
+      <a href="#momente">Fotos</a>
       <a href="#about">Über mich</a>
     </nav>
   </header>
 
   <main id="top">
     <section class="hero">
-      <img src="assets/beach.jpg" alt="Strand und Meer" />
+      <img src="assets/beach.jpg" alt="Meer und Strand" />
       <div class="hero-overlay"></div>
       <div class="hero-content">
-        <span class="eyebrow">REISEBLOG</span>
+        <span class="eyebrow">REISEBLOG · FOTOS · VIDEOS</span>
         <h1>Phil ist<br>unterwegs.</h1>
-        <p>Texte kommen später. Erstmal zählt das Gefühl.</p>
-        <a class="cta" href="#gallery">Fotos ansehen ↓</a>
+        <p>Ein persönliches Reisetagebuch über Meer, Straßen, Essen und die kleinen Momente dazwischen.</p>
+        <a class="hero-button" href="erster-eintrag.html">Ersten Beitrag lesen</a>
       </div>
     </section>
 
-    <section class="intro" id="stories">
-      <div>
-        <span class="eyebrow dark">NEU IM BLOG</span>
-        <h2>Geschichten, die noch geschrieben werden.</h2>
+    <section class="latest-banner" aria-label="Neu im Blog">
+      <div class="inner">
+        <div>
+          <span class="tag">Neu im Blog</span>
+          <h3>Die ersten Eindrücke</h3>
+          <p>Eine erste Geschichte aus dem vorhandenen Foto- und Videomaterial – Orte und genaue Daten ergänzen wir später.</p>
+        </div>
+        <a class="text-link" href="erster-eintrag.html">Beitrag öffnen →</a>
       </div>
-      <p class="muted">Hier kommen später deine Reiseberichte, Orte, Erlebnisse und persönlichen Texte hinein.</p>
+    </section>
+
+    <section class="intro" id="blog">
+      <div>
+        <span class="eyebrow dark">AKTUELL IM BLOG</span>
+        <h2>Fotos zuerst. Die Geschichten wachsen danach.</h2>
+      </div>
+      <p class="muted">Hier entsteht nach und nach ein richtiges Reisetagebuch. Die erste Version zeigt bereits ausgewählte Momente aus deinem Material – mit Bildern, kurzen Texten und Videos.</p>
+    </section>
+
+    <section class="feature-story">
+      <div class="feature-image"><img src="assets/night.jpg" alt="Abendliche Straße mit Lichtern" /></div>
+      <article class="feature-copy">
+        <span class="eyebrow dark">BEITRAG 01 · ERSTE EINDRÜCKE</span>
+        <h2>Unterwegs passiert die Geschichte oft nebenbei.</h2>
+        <p>Am Meer stehen bleiben. Durch Straßen gehen. Etwas essen, kurz Pause machen und später am Abend noch einmal losziehen. Genau diese kleinen Szenen bilden den Anfang dieses Blogs.</p>
+        <p>Noch fehlen Ortsnamen und einzelne Details. Der Beitrag ist deshalb bewusst als erste Fassung aufgebaut und kann später mit deinen Erinnerungen ergänzt werden.</p>
+        <a class="button dark-button" href="erster-eintrag.html">Ganzen Beitrag lesen</a>
+      </article>
     </section>
 
     <section class="cards">
-      <article class="story-card large">
-        <img src="assets/night.jpg" alt="Abendliche Straße" />
-        <div class="card-copy"><span>01</span><h3>Beitrag folgt</h3><p>Text später</p></div>
-      </article>
-      <article class="story-card">
+      <a class="story-card large" href="erster-eintrag.html#meer">
+        <img src="assets/beach.jpg" alt="Meer und Strand" />
+        <div class="card-copy"><span>AM MEER</span><h3>Einfach kurz stehen bleiben.</h3><p>Wasser, Wind und ein Moment ohne Plan.</p></div>
+      </a>
+      <a class="story-card" href="erster-eintrag.html#unterwegs">
         <img src="assets/travel.jpg" alt="Unterwegs" />
-        <div class="card-copy"><span>02</span><h3>Beitrag folgt</h3><p>Text später</p></div>
-      </article>
-      <article class="story-card">
-        <img src="assets/food.jpg" alt="Essen unterwegs" />
-        <div class="card-copy"><span>03</span><h3>Beitrag folgt</h3><p>Text später</p></div>
-      </article>
+        <div class="card-copy"><span>UNTERWEGS</span><h3>Auch der Weg gehört dazu.</h3><p>Zwischen zwei Orten entstehen oft die besten Erinnerungen.</p></div>
+      </a>
+      <a class="story-card" href="erster-eintrag.html#essen">
+        <img src="assets/croissant.jpg" alt="Gebäck und Getränk" />
+        <div class="card-copy"><span>PAUSE</span><h3>Eine Kleinigkeit und weiter.</h3><p>Kleine Stopps gehören genauso zur Reise.</p></div>
+      </a>
     </section>
 
-    <section class="gallery-section" id="gallery">
+    <section class="video-section" id="videos">
+      <div class="section-head video-head">
+        <div><span class="eyebrow dark">BEWEGTE MOMENTE</span><h2>Kleine Videos unterwegs</h2></div>
+        <p class="muted">Ein paar kurze Clips aus deinem bisherigen Material. Sie laufen direkt auf der Website und können später einzelnen Blogbeiträgen zugeordnet werden.</p>
+      </div>
+      <div class="video-grid">
+        <article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/moment-1.mp4" type="video/mp4"></video><div><span>VIDEO 01</span><h3>Unterwegs festgehalten</h3></div></article>
+        <article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/moment-2.mp4" type="video/mp4"></video><div><span>VIDEO 02</span><h3>Ein weiterer Moment</h3></div></article>
+        <article class="video-card"><video controls preload="metadata" playsinline><source src="assets/videos/moment-3.mp4" type="video/mp4"></video><div><span>VIDEO 03</span><h3>Kurzer Eindruck vom Tag</h3></div></article>
+      </div>
+    </section>
+
+    <section class="journal-strip">
+      <div class="journal-copy">
+        <span class="eyebrow dark">ESSEN & ALLTAG</span>
+        <h2>Auch das gehört zur Reise.</h2>
+        <p>Zwischen neuen Eindrücken bleiben oft gerade die einfachen Mahlzeiten im Kopf: etwas ausprobieren, schnell etwas essen oder eine kleine Pause draußen machen.</p>
+      </div>
+      <div class="journal-grid">
+        <figure><img src="assets/meal.jpg" alt="Mahlzeit auf einem Teller"><figcaption>Ein unkompliziertes Essen zwischendurch.</figcaption></figure>
+        <figure><img src="assets/pasta.jpg" alt="Packung Zitronen-Spaghetti"><figcaption>Zitronen-Spaghetti – eine kleine Entdeckung.</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="gallery-section" id="momente">
       <div class="section-head">
         <div><span class="eyebrow dark">MOMENTE</span><h2>Fotoalbum</h2></div>
-        <p class="muted">Eine erste Auswahl aus deinem Material.</p>
+        <p class="muted">Klick auf ein Bild für die Großansicht. Neue Bilder können wir später einfach in den Ordner <strong>assets</strong> legen und hier ergänzen.</p>
       </div>
       <div class="masonry">
         <button class="photo tall"><img src="assets/beach.jpg" alt="Meer"></button>
-        <button class="photo"><img src="assets/snack.jpg" alt="Snack"></button>
+        <button class="photo"><img src="assets/snack.jpg" alt="Gebäck und Getränk"></button>
         <button class="photo"><img src="assets/drink.jpg" alt="Getränk unterwegs"></button>
-        <button class="photo tall"><img src="assets/night.jpg" alt="Abend"></button>
-        <button class="photo"><img src="assets/pasta.jpg" alt="Pasta"></button>
-        <button class="photo tall"><img src="assets/portrait.jpg" alt="Unterwegs"></button>
+        <button class="photo tall"><img src="assets/night.jpg" alt="Abendliche Straße"></button>
+        <button class="photo"><img src="assets/meal.jpg" alt="Essen"></button>
+        <button class="photo tall"><img src="assets/portrait.jpg" alt="Phil unterwegs"></button>
+        <button class="photo"><img src="assets/travel.jpg" alt="Unterwegs"></button>
+        <button class="photo"><img src="assets/pasta.jpg" alt="Zitronen-Spaghetti"></button>
+        <button class="photo"><img src="assets/food.jpg" alt="Essen unterwegs"></button>
       </div>
     </section>
 
@@ -75,15 +125,17 @@
       <img src="assets/portrait.jpg" alt="Phil unterwegs" />
       <div>
         <span class="eyebrow dark">ÜBER DEN BLOG</span>
-        <h2>Ein Platz für deine Reisen.</h2>
-        <p class="muted">Dein eigener Bereich für Bilder, Videos und Geschichten. Den Text bauen wir später gemeinsam ein.</p>
+        <h2>Ein Platz für alles, was unterwegs hängen bleibt.</h2>
+        <p class="muted">Dieser Blog wächst mit jeder Reise und jedem neuen Tag. Nicht nur Sehenswürdigkeiten, sondern auch Wege, Essen, kleine Pausen, spontane Videos und ganz normale Momente bekommen hier ihren Platz.</p>
+        <p class="muted small">Die Texte sind derzeit erste Entwürfe aus dem vorhandenen Material. Sobald du mir Orte, Daten und deine Erinnerungen gibst, machen wir daraus persönliche Beiträge.</p>
       </div>
     </section>
   </main>
 
   <footer>
     <strong>Phil ist unterwegs</strong>
-    <span>© 2026</span>
+    <span>© 2026 · Reiseblog</span>
+    <span class="site-footer-note">philisunterwegs.com</span>
   </footer>
 
   <dialog id="lightbox"><button class="close" aria-label="Schließen">×</button><img alt="Großansicht"></dialog>
