@@ -10,3 +10,84 @@
 a.story-card{text-decoration:none;color:inherit}.hero-button,.button{display:inline-block;text-decoration:none;border-radius:999px;padding:13px 20px;font-weight:700}.hero-button{margin-top:20px;background:#fff;color:#151515}.dark-button{background:#151515;color:#fff;margin-top:14px}.text-link{color:#151515;text-decoration:none;font-weight:700;white-space:nowrap}.video-section{padding:22px 0 65px}.video-grid{width:min(88%,1120px);margin:auto;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}.video-card{background:var(--paper2);border-radius:22px;overflow:hidden}.video-card video{display:block;width:100%;aspect-ratio:9/16;object-fit:cover;background:#111}.video-card div{padding:17px 18px 20px}.video-card span{font-size:.72rem;letter-spacing:.12em;color:#766c61}.video-card h3{margin:6px 0 0;font-size:1.15rem}.video-head{margin-top:65px}
 .article-page{background:#f4f0e9}.article-hero{height:72vh;min-height:600px;position:relative;overflow:hidden}.article-hero>img{width:100%;height:100%;object-fit:cover}.article-hero-overlay{position:absolute;inset:0;background:linear-gradient(0deg,rgba(0,0,0,.72),rgba(0,0,0,.05) 65%)}.article-hero-copy{position:absolute;left:max(6vw,28px);bottom:9vh;color:#fff;max-width:900px}.article-hero-copy h1{font-family:'Playfair Display',Georgia,serif;font-size:clamp(3.6rem,9vw,8rem);line-height:.95;margin:.14em 0}.article-hero-copy p{font-size:1.12rem;line-height:1.6;max-width:650px}.back-link{display:inline-block;color:#fff;text-decoration:none;margin-bottom:24px;opacity:.9}.article-body{width:min(88%,920px);margin:0 auto;padding:80px 0 100px}.article-lead{font-size:1.25rem;line-height:1.8;max-width:760px;margin-bottom:90px}.dropcap:first-letter{float:left;font-family:'Playfair Display',Georgia,serif;font-size:5rem;line-height:.8;padding:12px 12px 0 0}.article-section{margin:0 0 105px}.article-section h2{font-family:'Playfair Display',Georgia,serif;font-size:clamp(2.6rem,6vw,5.2rem);line-height:1;margin:.18em 0 .35em}.article-section>p{max-width:740px;color:#625a51;line-height:1.85;font-size:1.05rem}.article-wide{margin:34px 0 0}.article-wide img{width:100%;max-height:680px;object-fit:cover;border-radius:26px}.article-wide figcaption{color:#7a7065;font-size:.86rem;margin-top:9px}.article-two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:35px}.article-two img{width:100%;height:590px;object-fit:cover;border-radius:24px}.article-three{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:35px}.article-three img{width:100%;height:430px;object-fit:cover;border-radius:22px}.article-video-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:35px}.article-video-grid video{width:100%;max-height:700px;background:#111;border-radius:22px}.closing-note{background:var(--paper2);padding:50px;border-radius:28px}.site-footer-note a{color:inherit}
 @media(max-width:800px){.latest-banner .inner{align-items:flex-start;flex-direction:column}.video-grid{grid-template-columns:1fr}.video-card video{aspect-ratio:16/10}.article-hero{height:78vh;min-height:560px}.article-body{padding-top:55px}.article-lead{font-size:1.1rem;margin-bottom:65px}.article-section{margin-bottom:72px}.article-two,.article-three,.article-video-grid{grid-template-columns:1fr}.article-two img,.article-three img{height:auto;aspect-ratio:4/5}.closing-note{padding:30px 24px}}
+/* FAQ */
+
+.faq-section {
+  width: min(88%, 1120px);
+  margin: 100px auto 110px;
+  display: grid;
+  grid-template-columns: .8fr 1.2fr;
+  gap: 70px;
+  align-items: start;
+}
+
+.faq-intro h2 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: clamp(2.8rem, 5vw, 4.8rem);
+  line-height: 1;
+  margin: .25em 0;
+}
+
+.faq-list {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid var(--soft);
+}
+
+.faq-list details {
+  border-bottom: 1px solid var(--soft);
+}
+
+.faq-list summary {
+  list-style: none;
+  cursor: pointer;
+  padding: 24px 45px 24px 0;
+  font-size: 1.1rem;
+  font-weight: 600;
+  position: relative;
+}
+
+.faq-list summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-list summary::after {
+  content: "+";
+  position: absolute;
+  right: 4px;
+  top: 20px;
+  font-size: 1.6rem;
+}
+
+.faq-list details[open] summary::after {
+  transform: rotate(45deg);
+}
+
+.faq-list p {
+  margin: 0;
+  padding: 0 45px 25px 0;
+  color: #6f675e;
+  line-height: 1.75;
+}
+
+@media (max-width: 800px) {
+  .faq-section {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 70px;
+  }
+
+  .faq-intro h2 {
+    font-size: 2.8rem;
+  }
+}
+
+
+
+
+
+
+
+
+
+
